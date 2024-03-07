@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="56.261" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="User Login" name="To validate dashboard page title when user enter valid login data" time="9.411">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName "binaryrushi@gmail.com"..............................passed
+And To enter the uPass "salman007"..........................................passed
+When To click on login button...............................................passed
+Then To validate the dashboard  title "My Account"..........................passed
+And To logout from the dashboard page.......................................passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="To validate login page title when user enter invalid data - Example #1.1" time="7.623">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName ""...................................................passed
+And To enter the uPass ""...................................................passed
+When To click on login button...............................................passed
+Then To validate the message "Warning: No match for E-Mail Address and/or Password." is displayed.passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="To validate login page title when user enter invalid data - Example #1.2" time="7.672">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName ""...................................................passed
+And To enter the uPass "123456".............................................passed
+When To click on login button...............................................passed
+Then To validate the message "Warning: No match for E-Mail Address and/or Password." is displayed.passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="To validate login page title when user enter invalid data - Example #1.3" time="7.934">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName "binaryrushi@gmail.com"..............................passed
+And To enter the uPass ""...................................................passed
+When To click on login button...............................................passed
+Then To validate the message "Warning: No match for E-Mail Address and/or Password." is displayed.passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="To validate login page title when user enter invalid data - Example #1.4" time="7.271">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName "queuecodes".........................................passed
+And To enter the uPass "salman007"..........................................passed
+When To click on login button...............................................passed
+Then To validate the message "Warning: No match for E-Mail Address and/or Password." is displayed.passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="To validate login page title when user enter invalid data - Example #1.5" time="7.854">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName "binaryrushi@gmail.com"..............................passed
+And To enter the uPass "123213".............................................passed
+When To click on login button...............................................passed
+Then To validate the message "Warning: No match for E-Mail Address and/or Password." is displayed.passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="To validate login page title when user enter invalid data - Example #1.6" time="7.886">
+<system-out><![CDATA[
+Given To launch the browser "chrome"........................................passed
+And To enter the site url "https://tutorialsninja.com/demo/index.php?route=account/login".passed
+And To enter the uName "queuecodes@gmail."..................................passed
+And To enter the uPass "121212".............................................passed
+When To click on login button...............................................passed
+Then To validate the message "Warning: No match for E-Mail Address and/or Password." is displayed.passed
+And To close the browser....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
